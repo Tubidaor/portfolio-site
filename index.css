@@ -24,6 +24,7 @@ body {
 }
 .menu {
   background-color: #aaa;
+  display: none;
   
 }
 
@@ -43,6 +44,7 @@ body {
 
 .intro-elaborate {
   background-color: #bbb;
+  display: none;
 }
 .transition {
   background-color: white;
@@ -60,15 +62,6 @@ body {
   margin-right: auto;
 }
 
-@media (max-width: 411px) {
-  .menu {
-    display: none;
-  }
-  .intro-elaborate {
-    display: none;
-  }
-
-}
 @media (min-width: 412px) {
   .hamburger {
     display: none;
