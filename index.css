@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.heading {
+  background-color: #aaa;
+}
+.nav-bar {
+  background-color: #bbb;
+}
+.hamburger {
+  background-color: #aaared;
+}
+.menu {
+  background-color: #aaared;
+}
+
+.hero-image {
+  background-color: #bbb;
+}
+
+.intro {
+  background-color: #aaa;
+}
+
+.intro-elaborate {
+  background-color: #bbb;
+}
+.transition {
+  background-color: white;
+}
+.projects {
+  background-color: #aaa;
+}
+.project-1 {
+  background-color: #bbb;
+}
