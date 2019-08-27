@@ -2,46 +2,80 @@
 
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>J.Baltazar Porfilio Site</title>
+    <title>J.Baltazar Porfolio Site</title>
+    <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap"
+      rel="stylesheet"
+    > 
     <link rel="stylesheet" href="index.css">
   </head>
 
   <Body>
-    <header role="heading">
-      <nav class="nav-bar">NAV
-        <div class="hamburger">Hamburger</div>
+    <header role="heading" class="header">
+      <nav class="nav-bar"><span class="my-name">Juan Baltazar</span>
+        <div class="hamburger">
+          <span class="hamburger-font">&#9776;</span>
+        </div>
         <ul class="menu">
-          <li class="li item1">Item1</li>
-          <li class="li item2">Item2</li>
-          <li class="li item3">Item3</li>
-          <li class="li item4">Item4</li>
+          <li class="li item1">
+            <a href="aboutme.html">About me</a>
+          </li>
+          <li class="li item2">
+              <a href="#projects">Projects</a>
+          </li>
+          <li class="li item3">
+            <a href="https://www.linkedin.com/in/juanbaltazar/">Linkedin</a>
+          </li>
+          <li class="li item4">
+            <a href="books.html">Books</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main role="main">
-      <div class="hero-image">Hero Image
+      <div class="hero-image" >
+        
         <div class="intro">
-          Intro
+          <h1>
+            HI. I’M JUAN.
+          </h1>
+          <p class="intro"> 
+            I am a Full Stack Developer stuck in the body of CPA. After 11 years as an accounting professional, 
+            I decided to pursue what brings me joy and fulfillment: coding, problem solving, and building stuff.
+          </p>
         </div>
         <div class="intro-elaborate">
           Intro elaborate
         </div>
-        <button class="button resume" type="button">Resume</button>
-        <button class="button contact" type="button">Contact Me</button>
-      </div> 
-      <div class="transition">Space</div>             
-      <div class="projects"> Projects
-        <section class="project-1">
-          Project 1
-        </section>
-        <section class="poject-2">
-          Project 2
-        </section>
+        <div class="button-div"> 
+          <button class="button resume" type="button">Resume</button>
+          <button class="button contact" type="button">Contact Me</button>
+        </div>
+      </div>             
+      <div class="transition">
+        Space
       </div>
-      <footer class="footer"></footer>
+      <div>
+        <div class="projects" id="projects"> Projects
+          <section class="project-1">
+            Project 1
+          </section>
+          <section class="poject-2">
+            Project 2
+          </section>
+        </div>
+      </div>
     </main>
+    
+    <footer class="footer"></footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
