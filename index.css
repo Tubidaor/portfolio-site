@@ -81,7 +81,6 @@ p.intro {
 }
 
 .intro-elaborate {
-  background-color: #bbb;
   display: none;
 }
 .transition-arrow {
@@ -134,7 +133,7 @@ p.intro {
 }
 .button-div {
   position: absolute;
-  bottom: 140px;
+  bottom: 270px;
   left: 0px;
   right: 0px;
 }
@@ -147,6 +146,7 @@ p.intro {
   background-color: #848CA3;
   color: #FF7800;
   height: 25px;
+  width: 100px;
   font-size: 16px;
   border-radius: 8px;
 }
@@ -156,6 +156,13 @@ p.intro {
   line-height: 24px;
   font-size: 16px;
   color: black;
+}
+section img {
+  display: block;
+  height: 220px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 414px) {
@@ -171,5 +178,26 @@ p.intro {
   }
   .button {
     display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 6px;
   }
+  .intro-elaborate {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+  .elaborate {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 10px;
+  }
+    .button-div {
+    text-align: center;
+  } 
 }
