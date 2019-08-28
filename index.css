@@ -84,8 +84,39 @@ p.intro {
   background-color: #bbb;
   display: none;
 }
-.transition {
-  background-color: white;
+.transition-arrow {
+  background-color: #000;
+  height: 60px;
+  width: 100%;
+}
+.transition-arrow span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #06a8ff;
+  border-right: 5px solid #06a8ff;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+  margin-left: calc(50% - 7.5px);
+}
+.transition-arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.transition-array span:nth-child(3){
+  animation-delay: -.02s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }
 .projects {
   background-color: #aaa;
@@ -96,7 +127,7 @@ p.intro {
 }
 .button-div {
   position: absolute;
-  bottom: 60px;
+  bottom: 140px;
   left: 0px;
   right: 0px;
 }
