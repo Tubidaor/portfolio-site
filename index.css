@@ -18,15 +18,12 @@ header {
 main {
   margin-top: 50px;
 }
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 50px;
-  align-items: flex-end;
-}
+
 .my-name {
   font-size: 32px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 
 h1 {
@@ -47,19 +44,9 @@ h1 {
   background-position-x: -200px;
   height: 500px;
 }
-.hamburger {
-  text-align: right;
-  position: relative;
-  font-size: 32px;
-}
+
 .menu {
   display: none;
-  color:#0878CE;
-}
-
-.li {
-  margin: 2px;
-  list-style-type: none;
 }
 
 div.intro {
@@ -133,7 +120,7 @@ p.intro {
 }
 .button-div {
   position: absolute;
-  bottom: 270px;
+  top: 480px;
   left: 0px;
   right: 0px;
 }
@@ -149,6 +136,7 @@ p.intro {
   width: 100px;
   font-size: 16px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .project p {
@@ -164,8 +152,100 @@ section img {
   margin-left: auto;
   margin-right: auto;
 }
+#hamburger {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
 
-@media (min-width: 414px) {
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #b81568;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  font-weight: bold;
+}
+
+.menu li {
+  list-style: none;
+  padding: 16px 0;
+  
+} 
+
+.menu {
+  text-align: right;
+  padding-right: 10px;
+  margin: 60px 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+.menu-bg, #hamburger {
+  top: -5px;
+  right: 15px;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 0;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #e94498, #b81568);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+#nav-bar {
+  z-index: 2;
+}
+
+.change-bg {
+  width: 550px;
+  height: 540px;
+  transform: translate(60%, -30%);
+}
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translatey(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+
+
+@media (min-width: 415px) {
   .hamburger {
     display: none;
   }
@@ -175,13 +255,22 @@ section img {
     justify-content: right;
     align-items: flex-end;
     height: 50px;
-  }
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 20px;
+  } 
+
   .button {
     display: inline;
     margin-left: auto;
     margin-right: auto;
     margin: 6px;
   }
+
+  li {
+    margin-right: 6px;
+  }
+
   .intro-elaborate {
     display: block;
     padding: 10px;
@@ -190,6 +279,7 @@ section img {
     border-radius: 10px;
     margin-right: 30px;
   }
+
   .elaborate {
     font-size: 16px;
     line-height: 24px;
@@ -197,6 +287,7 @@ section img {
     padding-left: 150px;
     padding-right: 10px;
   }
+
     .button-div {
     text-align: center;
   } 

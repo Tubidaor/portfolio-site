@@ -20,26 +20,29 @@
 
   <Body>
     <header role="heading" class="header">
-      <nav class="nav-bar"><span class="my-name">Juan Baltazar</span>
-        <div class="hamburger">
-          <span class="hamburger-font">&#9776;</span>
-        </div>
-        <ul class="menu">
-          <li class="li item1">
-            <a href="aboutme.html">About me</a>
-          </li>
-          <li class="li item2">
+      <nav class="nav-bar" id="nav-bar"><span class="my-name">Juan Baltazar</span>
+        <div class="hamburger" id="hamburger" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <ul class="menu" id="menu">
+            <li class="li item1">
+              <a href="aboutme.html">About me</a>
+            </li>
+            <li class="li item2">
               <a href="#projects">Projects</a>
-          </li>
-          <li class="li item3">
-            <a href="https://www.linkedin.com/in/juanbaltazar/">Linkedin</a>
-          </li>
-          <li class="li item4">
-            <a href="books.html">Books</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            </li>
+            <li class="li item3">
+              <a href="https://www.linkedin.com/in/juanbaltazar/">Linkedin</a>
+            </li>
+            <li class="li item4">
+              <a href="books.html">Books</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <div class="menu-bg" id="menu-bg"></div>
     <main role="main">
       <div class="hero-image" >
         <div class="intro">
