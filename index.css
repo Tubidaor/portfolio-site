@@ -233,9 +233,11 @@ section img {
 }
 
 .change-bg {
+  position: absolute;
   width: 550px;
   height: 540px;
   -webkit-transform: translate(70%, -35%);
+  margin: 30px 0 20px 20px
 }
 
 .change .bar {
