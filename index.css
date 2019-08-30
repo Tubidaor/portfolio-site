@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
+
 header {
   position:fixed;
   z-index: 1;
@@ -15,6 +16,7 @@ header {
   background-size: cover;
   background-position-y: 68%;
 }
+
 main {
   margin-top: 50px;
 }
@@ -32,6 +34,7 @@ h1 {
   font-size: 48px;
   margin-top: 20px;
 }
+
 .hero-image {
   background-image: 
     linear-gradient(
@@ -75,6 +78,7 @@ p.intro {
   height: 40px;
   width: 100%;
 }
+
 .transition-arrow span {
   display: block;
   width: 20px;
@@ -85,12 +89,15 @@ p.intro {
   animation: animate 2s infinite;
   margin-left: calc(50% - 7.5px);
 }
+
 .transition-arrow span:nth-child(2){
   animation-delay: -0.2s;
 }
+
 .transition-array span:nth-child(3){
   animation-delay: -.02s;
 }
+
 @keyframes animate {
   0%{
       opacity: 0;
@@ -104,26 +111,31 @@ p.intro {
       transform: rotate(45deg) translate(20px,20px);
   }
 }
+
 .projects {
   background-color: #000;
   text-align: center;
   height: 30px;
 }
+
 .projects span {
   font-size: 32px;
   position: relative;
   top: -40px;
   color: white;
 }
+
 .project-1 {
   background-color: #bbb;
 }
+
 .button-div {
   position: absolute;
   top: 480px;
   left: 0px;
   right: 0px;
 }
+
 .button {
   display: block;
   margin-top: 6px;
@@ -145,6 +157,7 @@ p.intro {
   font-size: 16px;
   color: black;
 }
+
 section img {
   display: block;
   height: 220px;
@@ -152,6 +165,7 @@ section img {
   margin-left: auto;
   margin-right: auto;
 }
+
 #hamburger {
   width: 35px;
   height: 30px;
@@ -188,7 +202,6 @@ section img {
 .menu li {
   list-style: none;
   padding: 16px 0;
-  
 } 
 
 .menu {
@@ -211,7 +224,7 @@ section img {
   height: 0;
   margin: 30px 0 20px 20px;
   background: radial-gradient(circle, #e94498, #b81568);
-  border-radius: 50%;
+  border-radius: 30%;
   transition: 0.3s ease;
 }
 
@@ -222,8 +235,9 @@ section img {
 .change-bg {
   width: 550px;
   height: 540px;
-  transform: translate(60%, -30%);
+  -webkit-transform: translate(70%, -35%);
 }
+
 .change .bar {
   background-color: white;
 }
@@ -243,7 +257,6 @@ section img {
 .change {
   display: block;
 }
-
 
 @media (min-width: 415px) {
   .hamburger {
