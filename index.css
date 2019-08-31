@@ -223,10 +223,8 @@ section img {
 }
 
 .menu li {
-  list-style: none;
-  padding: 8px 0;
-  margin-bottom: 9px;
-} 
+  margin-top: 12px;
+}
 
 
 
@@ -285,7 +283,7 @@ section img {
   display: block;
 }
 
-@media (min-width: 667px) {
+@media (min-width: 680px) {
   .hamburger {
     display: none;
   }
@@ -312,8 +310,8 @@ section img {
   }
 
   .menu li::after{
-    content: "|"
-  }
+  content: "|"
+}
 
   .intro-elaborate {
     display: block;
@@ -334,5 +332,11 @@ section img {
 
     .button-div {
     text-align: center;
+  } 
+
+  .menu li {
+    list-style: none;
+    padding: 8px 0;
+    margin-bottom: 9px;
   } 
 }
