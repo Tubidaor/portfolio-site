@@ -2,7 +2,9 @@
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f2f2f2;
 }
@@ -33,23 +35,13 @@ main {
   left: 10px;
 }
 
-div h1 {
-  margin-left: auto;
-  margin-right: auto;
-}
-h1 .hi-juan {
-  position: relative;
-  top: 12px;
-}
-
 .about-me-div h1 {
   margin-top: 80px;
 }
-h1 .about-me {
-  position: relative;
-  top: 8px;
-}
 
+.about-me-div {
+  margin: 10px;
+}
 h1 {
   color: #f2ea9f;
   text-align: center;
@@ -60,6 +52,31 @@ h1 {
   height: 50px;
   width: 244px;
   font-family: 'Hepta Slab', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h2 {
+  font-size: 22px;
+  color: #f2ea9f;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: radial-gradient(circle, #03689c, #000000);
+  height: 50px;
+  width: 244px;
+  font-family: 'Hepta Slab', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-image { 
@@ -68,7 +85,7 @@ h1 {
   background-repeat: no-repeat;
   background-position-x: -200px;
   background-position-y: 66px;
-  height: 490px;
+  height: 478px;
 }
 
 .menu {
@@ -80,7 +97,6 @@ div.intro {
   font-size: 16px;
   line-height: 24px;
   border-radius: 10px;
-  margin-right: 30px;
 }
 
 p.intro {
@@ -105,7 +121,12 @@ p.intro {
   height: 40px;
   width: 100%;
 }
-
+.transition-arrow p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #e94498;
+}
 .transition-arrow span {
   display: block;
   width: 20px;
@@ -128,40 +149,25 @@ p.intro {
 @keyframes animate {
   0%{
       opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+      transform: rotate(45deg) translate(-100px,-100px);
   }
   50%{
       opacity: 1;
   }
   100%{
       opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+      transform: rotate(45deg) translate(-40px,-40px);
   }
 }
 
 .projects {
-  background-color: #000;
   text-align: center;
-  height: 30px;
   font-family: 'Hepta Slab', serif;
-}
-
-.projects span {
-  font-size: 32px;
-  position: relative;
-  top: -25px;
-  color: #e94498;
+  margin-top: 20px;
 }
 
 .project-1 {
   background-color: #f2f2f2;
-}
-
-.button-div {
-  position: absolute;
-  top: 460px;
-  left: 0px;
-  right: 0px;
 }
 
 .button {
@@ -182,6 +188,7 @@ p.intro {
 }
 
 .project p {
+  margin: 10px;
   padding: 6px;
   line-height: 24px;
   font-size: 16px;
