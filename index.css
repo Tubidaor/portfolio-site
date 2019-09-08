@@ -470,13 +470,13 @@ ul.contact {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 850px) {
   p.intro, p.elaborate {
     width: 25%;
-    margin-left: 50%;
+    margin-left: 60%;
   }
   p.intro {
-    margin-top: 75px;
+    margin-top: 255px;
     padding-left: 0px;
   }
   p.elbororate {
@@ -484,8 +484,8 @@ ul.contact {
   }
   .hero-image {
     background-size: 74vh auto;
-    background-position-x: calc(100% - 55vw);
-    background-position-y: calc(100% - 15vh);
+    background-position-x: calc(100% - 20vw);
+    background-position-y: calc(100% - -5vh);
 }
   .intro-elaborate, div.intro {
     padding-right: 0px;
@@ -498,5 +498,21 @@ ul.contact {
   }
   section img {
     height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-image {
+    background-size: 74vh auto;
+    background-position-x: calc(100% - 50vw);
+    background-position-y: calc(100% - 15vh);
+  }
+  p.intro {
+    margin-top: 75px;
+    padding-left: 0px;
+  }
+  p.intro, p.elaborate {
+    width: 25%;
+    margin-left: 50%;
   }
 }
