@@ -100,7 +100,7 @@ h2 {
   display: none;
 }
 
-p.intro {
+.divintro {
   color: #001628;
   font-family: 'Ubuntu', sans-serif;
   border-radius: 6px;
@@ -362,3 +362,44 @@ ul.contact {
   margin-top: 50px;
 }
 
+@media only screen 
+and (min-width: 568px)
+and (orientation: landscape) {
+  h1 {
+    display: none;
+  }
+  .container img, .divintro {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+  }
+  .container {
+    text-align: center;
+  }
+  .container .divintro p {
+    text-align: left;
+    vertical-align: center;
+  }
+}
+
+@media only screen 
+and (min-width: 375px)
+and (min-height: 812px) {
+  .intro-elaborate {
+    display: inline;
+  }
+  .container {
+    margin-top: 50px;
+  }
+}
+
+@media only screen 
+and (min-width: 375px)
+and (min-height: 812px) {
+  .intro-elaborate {
+    display: inline;
+  }
+  .container {
+    margin-top: 50px;
+  }
+}
