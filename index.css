@@ -370,16 +370,34 @@ and (orientation: landscape) {
   }
   .container img, .divintro {
     display: inline-block;
-    width: 40%;
+    width: 38%;
     vertical-align: middle;
   }
   .container {
     text-align: center;
+    margin-top: 50px; 
   }
   .container .divintro p {
     text-align: left;
     vertical-align: center;
   }
+  .divintro {
+    border: none;
+  }
+  section img {
+    width: 50%;
+  }
+}
+
+@media only screen 
+and (min-width: 375px)
+and (min-height: 812px) {
+  .intro-elaborate {
+    display: inline;
+  }
+  .container {
+    margin-top: 50px;
+  }
 }
 
 @media only screen 
@@ -392,14 +410,63 @@ and (min-height: 812px) {
     margin-top: 50px;
   }
 }
+@media only screen 
+and (min-width: 736px)
+and (orientation: landscape) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    height: 50px;
+    margin-top: -60px;
+    margin-right: 0px;
+    font-size: 20px;
+  } 
+  li {
+    margin-right: 6px;
+  }
+  .menu li::after{
+    content: "|"
+  }
+  .menu li {
+    list-style: none;
+    padding: 8px 0;
+    margin-bottom: 9px;
+  } 
+}
+@media only screen 
+and (min-width: 736px)
+and (orientation: landscape) {
+  .intro-elaborate {
+    display: inherit;
+  }
+}
+@media only screen 
+and (min-width: 768px)
+and (orientation: portrait) {
+  .container img {
+    width: 66%;
+  }
+}
 
 @media only screen 
-and (min-width: 375px)
-and (min-height: 812px) {
-  .intro-elaborate {
-    display: inline;
+and (min-width: 812px)
+and (orientation: landscape) {
+  .container img {
+    width: 32%;
   }
-  .container {
-    margin-top: 50px;
+}
+@media only screen 
+and (min-width: 1024px)
+and (orientation: landscape) {
+  .container img {
+    width: 32%;
+  }
+  h1 {
+    display: flex;
   }
 }
