@@ -362,16 +362,34 @@ ul.contact {
   margin-top: 50px;
 }
 
+.contact-div {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-me-div {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media only screen 
 and (min-width: 568px)
 and (orientation: landscape) {
-  h1 {
+  .mainh1 {
     display: none;
+  }
+  .contact-div {
+    margin-top: -20px;
   }
   .container img, .divintro {
     display: inline-block;
     width: 38%;
     vertical-align: middle;
+  }
+  .button {
+    display: inline;
   }
   .container {
     text-align: center;
@@ -466,7 +484,7 @@ and (orientation: landscape) {
   .container img {
     width: 32%;
   }
-  h1 {
+  .mainh1 {
     display: flex;
   }
 }
