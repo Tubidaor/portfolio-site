@@ -24,20 +24,25 @@ header {
 }
 
 main {
-  margin-top: 50px;
+  margin-top: 40px;
 }
-
-.container {
-  height: calc(100vh - 10vh);
-  position: relative;
-  overflow: hidden;
+.maindiv {
+  height: 100vh;
 }
 .container img {
-  position: absolute;
-  height: 85vh;
-  width: auto;
-  bottom: 0px;
-  left: -170px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: -6px;
+}
+
+.intro {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 .my-name {
   font-size: 32px;
@@ -58,7 +63,7 @@ h1 {
   color: #f2ea9f;
   text-align: center;
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 60px;
   border-radius: 8px;
   background: radial-gradient(circle, #03689c, #000000);
   height: 50px;
@@ -91,36 +96,23 @@ h2 {
   margin-right: auto;
 }
 
-/* .hero-image { 
-  background-image: url("https://raw.githubusercontent.com/Tubidaor/portfolio-site/master/Juan2.png");
-  background-size: 75vh auto;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-position-x: calc(100% - 20vw);
-  background-position-y: calc(100% - -5vh);
-} */
-
 .menu {
   display: none;
 }
 
-div.intro {
-  padding: 10px;
-  font-size: 16px;
-  line-height: 24px;
-  border-radius: 10px;
-}
-
 p.intro {
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  padding-left: 150px;
-  padding-right: 10px;
-  color: #000;
+  color: #001628;
   font-family: 'Ubuntu', sans-serif;
-  
+  border-radius: 6px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  padding: 6px;
+  border: 4px solid #001628;
+}
+.intro-elaborate {
+  display: none;
+  color: #000000;
+  font-family: 'Ubuntu', sans-serif;
 }
 .sticky {
   position: -webkit-sticky;
@@ -128,11 +120,6 @@ p.intro {
   top: 50px;
   bottom: 0px;
   height: 50px;
-}
-.intro-elaborate {
-  display: none;
-  color: #000000;
-  font-family: 'Ubuntu', sans-serif;
 }
 .transition-arrow {
   background-color: #000;
@@ -221,8 +208,8 @@ section {
 
 section img {
   display: block;
-  height: 220px;
-  width: auto;
+  height: auto;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -375,156 +362,3 @@ ul.contact {
   margin-top: 50px;
 }
 
-
-
-@media (min-width: 321px) {
-  section {
-    height: 570px;
-  }
-  p.intro {
-    padding-right: 15px;
-    margin-top: 55px;
-  }
-  section img {
-    height: 260px;
-  }
-}
-
-@media (min-width: 376px) {
-  header {
-    height: 80px;
-  }
-  .sticky {
-    top: 80px;
-    bottom: 0px;
-  }
-  main {
-    margin-top: 120px;
-  }
-  .menu-bg, #hamburger {
-    top: 25px; 
-  }
-  .my-name {
-    top: 46px;
-  }
-  section {
-    height: 620px;
-  }
-  p.intro {
-    padding-right: 20px;
-    padding-left: 180px;
-    margin-top: 65px;
-  }
-  section img {
-    height: 300px;
-  }
-}
-@media (min-width: 321px) and (min-height: 812px) {
-  p.intro {
-    margin-top: 150px;
-  }
-  section {
-    height: 100vh;
-  }
-}
-@media (min-width: 650px) {
-  .hamburger {
-    display: none;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: flex-end;
-    height: 50px;
-    margin-top: -31px;
-    margin-right: 0px;
-    font-size: 20px;
-  } 
-  .button {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 6px;
-  }
-  li {
-    margin-right: 6px;
-  }
-  .menu li::after{
-  content: "|"
-}
-  .intro-elaborate {
-    display: block;
-    padding-right: 15px;
-    padding-left: 410px;
-    font-size: 16px;
-    line-height: 24px;
-    margin-right: 30px;
-  }
-  p.intro {
-    margin-top: 225px;
-    padding-left: 400px;
-    padding-right: 15px;
-  }
-    .button-div {
-    text-align: center;
-  } 
-  .menu li {
-    list-style: none;
-    padding: 8px 0;
-    margin-bottom: 9px;
-  } 
-  section {
-    height: 900px;
-  }
-  section img {
-    height: 360px;
-  }
-}
-
-@media (min-width: 850px) {
-  p.intro, p.elaborate {
-    width: 25%;
-    margin-left: 60%;
-  }
-  p.intro {
-    margin-top: 255px;
-    padding-left: 0px;
-  }
-  p.elbororate {
-    padding-left: 0px;
-  }
-  /* .hero-image {
-    background-size: 74vh auto;
-    background-position-x: calc(100% - 20vw);
-    background-position-y: calc(100% - -5vh);
-} */
-  .intro-elaborate, div.intro {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  main {
-    margin-top: 100px;
-  }
-  section img {
-    height: 450px;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* .hero-image {
-    background-size: 74vh auto;
-    background-position-x: calc(100% - 50vw);
-    background-position-y: calc(100% - 15vh);
-  } */
-  p.intro {
-    margin-top: 75px;
-    padding-left: 0px;
-  }
-  p.intro, p.elaborate {
-    width: 25%;
-    margin-left: 50%;
-  }
-}
