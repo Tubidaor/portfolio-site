@@ -41,7 +41,6 @@ main {
 .intro {
   width: 100%;
   background-color: #f2f2f2;
-  margin-bottom: 8px;
 }
 p {
   font-family: 'Ubuntu', sans-serif;
@@ -116,6 +115,7 @@ h2 {
   display: none;
   color: #000000;
   font-family: 'Ubuntu', sans-serif;
+  margin-top: 8px;
 }
 .sticky {
   position: -webkit-sticky;
@@ -172,6 +172,9 @@ h2 {
   text-align: center;
   font-family: 'Hepta Slab', serif;
   margin-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-1 {
@@ -208,6 +211,7 @@ section {
   margin-bottom: 30px;
   border: 6px solid #000000;
   padding-bottom: 30px;
+  
 }
 
 section img {
