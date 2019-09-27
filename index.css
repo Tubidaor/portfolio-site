@@ -36,6 +36,8 @@ main {
   height: auto;
   display: block;
   margin-bottom: -6px;
+  border-bottom: 6px solid #e94498;
+  border-radius: 36px;
 }
 
 .intro {
@@ -106,7 +108,7 @@ h2 {
   color: #001628;
   font-family: 'Ubuntu', sans-serif;
   border-radius: 6px;
-  margin-top: 6px;
+  margin-top: 16px;
   margin-bottom: 10px;
   padding: 6px;
   border: 4px solid #001628;
@@ -120,7 +122,6 @@ h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
-  bottom: 0px;
   height: 50px;
 }
 .transition-arrow {
