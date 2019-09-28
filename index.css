@@ -82,7 +82,7 @@ h1 {
 
 }
 
-h2 {
+h3 {
   font-size: 22px;
   color: #f2ea9f;
   text-align: center;
@@ -129,7 +129,7 @@ h2 {
   height: 40px;
   width: 100%;
 }
-.transition-arrow p {
+.transition-arrow h2 {
   font-family: 'Dosis', sans-serif;
   font-size: 32px;
   text-align: center;
