@@ -28,11 +28,12 @@ main {
 }
 .maindiv {
   height: 100vh;
+  margin-bottom: 50px;
 }
 .container img {
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 70%;
   height: auto;
   display: block;
   margin-bottom: -6px;
@@ -54,6 +55,8 @@ p {
   position: absolute;
   top: 16px;
   left: 10px;
+  background-color: #000000;
+  box-shadow: 0 0 5px 1px #000000;
 }
 
 .about-me-div h1 {
@@ -64,7 +67,7 @@ p {
   margin: 10px;
 }
 h1 {
-  color: #f2ea9f;
+  color: #e4d236;
   text-align: center;
   font-size: 32px;
   margin-top: 60px;
@@ -84,7 +87,7 @@ h1 {
 
 h3 {
   font-size: 22px;
-  color: #f2ea9f;
+  color: #e4d236;
   text-align: center;
   margin-top: 46px;
   border-radius: 8px;
@@ -189,7 +192,7 @@ h3 {
   margin-right: auto;
   background-color: #03689c;
   background: radial-gradient(circle, #03689c, #000000);
-  color: #f2ea9f;
+  color: #e4d236;
   height: 30px;
   width: 100px;
   font-size: 16px;
@@ -247,9 +250,10 @@ section img {
 }
 
 .menu li a {
-  color: #f2ea9f;
+  color: #e4d236;
   text-decoration: none;
   font-weight: bold;
+  
 }
 
 .menu li a:hover {
@@ -301,7 +305,7 @@ section img {
 }
 
 .change .bar {
-  background-color: #f2ea9f;
+  background-color: #e4d236;
 }
 
 .change #bar1 {
@@ -350,6 +354,7 @@ section img {
 
 .contact-list {
   margin: 22px;
+  margin-top: 50px;
   
 }
 
@@ -401,7 +406,8 @@ and (orientation: landscape) {
   }
   .container {
     text-align: center;
-    margin-top: 50px; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
   }
   .container .divintro p {
     text-align: left;
@@ -447,10 +453,12 @@ and (orientation: landscape) {
     flex-direction: row;
     justify-content: right;
     align-items: flex-end;
-    height: 50px;
+    height: 30px;
     margin-top: -60px;
     margin-right: 0px;
     font-size: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 5px 3px #000000;
   } 
   li {
     margin-right: 6px;
@@ -460,8 +468,6 @@ and (orientation: landscape) {
   }
   .menu li {
     list-style: none;
-    padding: 8px 0;
-    margin-bottom: 9px;
   } 
 }
 @media only screen 
@@ -476,6 +482,11 @@ and (min-width: 768px)
 and (orientation: portrait) {
   .container img {
     width: 66%;
+  }
+  .divintro {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -492,6 +503,13 @@ and (orientation: landscape) {
   .container img {
     width: 32%;
   }
+  .mainh1 {
+    display: flex;
+  }
+}
+@media only screen 
+and (min-width: 580px)
+and (min-height: 490px) {
   .mainh1 {
     display: flex;
   }
