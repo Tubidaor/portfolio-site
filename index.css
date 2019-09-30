@@ -443,7 +443,7 @@ and (min-height: 812px) {
   }
 }
 @media only screen 
-and (min-width: 736px)
+and (min-width: 700px)
 and (orientation: landscape) {
   .hamburger {
     display: none;
@@ -468,13 +468,19 @@ and (orientation: landscape) {
   }
   .menu li {
     list-style: none;
-  } 
+  }
+  .divintro {
+    font-size: 18px;
+  }
 }
 @media only screen 
-and (min-width: 736px)
+and (min-width: 700px)
 and (orientation: landscape) {
   .intro-elaborate {
     display: inherit;
+  }
+  .divintro {
+    font-size: 18px;
   }
 }
 @media only screen 
@@ -496,6 +502,7 @@ and (orientation: landscape) {
   .container img {
     width: 32%;
   }
+  
 }
 @media only screen 
 and (min-width: 1024px)
@@ -503,13 +510,14 @@ and (orientation: landscape) {
   .container img {
     width: 32%;
   }
-  .mainh1 {
-    display: flex;
+  .divintro {
+    font-size: 20px;
   }
 }
+
 @media only screen 
-and (min-width: 580px)
-and (min-height: 490px) {
+and (min-width: 560px)
+and (min-height: 415px) {
   .mainh1 {
     display: flex;
   }
